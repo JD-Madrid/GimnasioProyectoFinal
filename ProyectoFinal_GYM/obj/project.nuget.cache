@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BStC8jd7Ue4=",
+  "dgSpecHash": "lPNe4opeMdo=",
   "success": true,
-  "projectFilePath": "C:\\Ort_PNT1\\ProyectosC#\\ProyectoFinal_GYM\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj",
+  "projectFilePath": "C:\\Users\\josed\\Source\\Repos\\GimnasioProyectoFinal\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josed\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\josed\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

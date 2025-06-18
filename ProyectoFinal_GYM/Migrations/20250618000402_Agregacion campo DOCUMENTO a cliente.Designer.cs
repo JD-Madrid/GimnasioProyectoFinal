@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoFinal_GYM.Models;
 
@@ -11,9 +12,11 @@ using ProyectoFinal_GYM.Models;
 namespace ProyectoFinal_GYM.Migrations
 {
     [DbContext(typeof(GymContext))]
-    partial class GymContextModelSnapshot : ModelSnapshot
+    [Migration("20250618000402_Agregacion campo DOCUMENTO a cliente")]
+    partial class AgregacioncampoDOCUMENTOacliente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,15 +79,12 @@ namespace ProyectoFinal_GYM.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("idPlan")
-                        .HasColumnType("int");
-
                     b.Property<string>("nombre")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("planid")
+                    b.Property<int>("planid")
                         .HasColumnType("int");
 
                     b.HasKey("id");
@@ -127,7 +127,9 @@ namespace ProyectoFinal_GYM.Migrations
                 {
                     b.HasOne("ProyectoFinal_GYM.Models.Plan", "plan")
                         .WithMany()
-                        .HasForeignKey("planid");
+                        .HasForeignKey("planid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("plan");
                 });

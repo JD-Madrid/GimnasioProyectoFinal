@@ -1,3 +1,30 @@
-﻿<h2>
-    HOLAAAAAAAAAAAAAAAAAAAAA
-</h2>
+﻿<h3 style="text-align: center">    Megatlon</h3>
+
+<form asp-controller="Home" asp-action="GuardarCliente" method="post">
+    <div class="mb-3">
+        <label for="inputNombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputNombre" name="nombre" placeholder="Ingrese su nombre">
+    </div>
+
+    <div class="mb-3">
+        <label for="inputApellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="inputApellido" name="apellido" placeholder="Ingrese su apellido">
+    </div>
+
+    <div class="mb-3">
+        <label for="inputDocumento" class="form-label">Documento</label>
+        <input type="text" class="form-control" id="inputDocumento" name="documento" placeholder="Ingrese su número de documento">
+    </div>
+
+    <div class="mb-3">
+        <label for="selectGenero" class="form-label">Género</label>
+        <select class="form-select" id="selectGenero" name="genero">
+            <option value="">Seleccione una opción</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

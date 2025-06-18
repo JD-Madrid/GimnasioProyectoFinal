@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ort_PNT1\\ProyectosC#\\ProyectoFinal_GYM\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj": {}
+    "C:\\Users\\josed\\Source\\Repos\\GimnasioProyectoFinal\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj": {}
   },
   "projects": {
-    "C:\\Ort_PNT1\\ProyectosC#\\ProyectoFinal_GYM\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj": {
+    "C:\\Users\\josed\\Source\\Repos\\GimnasioProyectoFinal\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ort_PNT1\\ProyectosC#\\ProyectoFinal_GYM\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj",
+        "projectUniqueName": "C:\\Users\\josed\\Source\\Repos\\GimnasioProyectoFinal\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj",
         "projectName": "ProyectoFinal_GYM",
-        "projectPath": "C:\\Ort_PNT1\\ProyectosC#\\ProyectoFinal_GYM\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj",
+        "projectPath": "C:\\Users\\josed\\Source\\Repos\\GimnasioProyectoFinal\\ProyectoFinal_GYM\\ProyectoFinal_GYM.csproj",
         "packagesPath": "C:\\Users\\josed\\.nuget\\packages\\",
-        "outputPath": "C:\\Ort_PNT1\\ProyectosC#\\ProyectoFinal_GYM\\ProyectoFinal_GYM\\obj\\",
+        "outputPath": "C:\\Users\\josed\\Source\\Repos\\GimnasioProyectoFinal\\ProyectoFinal_GYM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
