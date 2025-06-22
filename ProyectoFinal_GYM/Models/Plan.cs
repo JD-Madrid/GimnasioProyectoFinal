@@ -11,6 +11,5 @@ namespace ProyectoFinal_GYM.Models
     
         public List<Actividad> actividades { get; set; }
     
-        public Actividad actividad { get; set; }
     }
 }

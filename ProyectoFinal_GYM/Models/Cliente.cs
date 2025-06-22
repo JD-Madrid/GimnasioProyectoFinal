@@ -18,7 +18,5 @@ namespace ProyectoFinal_GYM.Models
         public string genero { get; set; } = String.Empty;
 
         public Plan? plan {  get; set; }
-
-        public int? idPlan { get; set; }
     }
 }
