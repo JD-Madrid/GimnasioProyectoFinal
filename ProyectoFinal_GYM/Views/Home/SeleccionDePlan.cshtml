@@ -1,0 +1,19 @@
+﻿<h3 style="text-align:center"> Selecciona un plan</h3>
+
+<form asp-controller="Home" asp-action="FinalizarRegistro" method="post">
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">plan basico.</p>
+            <button type="submit" name="plan" value="Basico" class="btn btn-success">Plan Básico</button>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">plan premium.</p>
+            <button type="submit" name="plan" value="Premium" class="btn btn-warning">Plan Premium</button>
+        </div>
+    </div>
+</form>
