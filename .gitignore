@@ -1,0 +1,64 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+## NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## ASP.NET
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+!appsettings.json
+
+## Entity Framework Migrations (si se usan por entorno)
+Migrations/
+
+## archivos de publicación
+.publish/
+*.pubxml
+*.Publish.xml
+
+## Sistema
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Mac / Linux
+.DS_Store
+*.swp
+
+## Git
+*.orig
+
+## Archivos temporales del usuario
+*.tmp
+*.bak
+*.log
+
+## Archivos de configuración de VSCode (opcional)
+.vscode/
+
+# Personalizados
+# Ignora base de datos local (si usás SQLite, por ejemplo)
+*.db
+*.sqlite

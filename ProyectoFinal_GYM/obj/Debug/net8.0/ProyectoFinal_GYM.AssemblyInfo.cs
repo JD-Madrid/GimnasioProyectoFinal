@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoFinal_GYM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a16db97a9b27c5a43047e08a39bd5e07cfb8b245")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4eb51430156b7a075d95a067b8c5b2136cf6321a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoFinal_GYM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoFinal_GYM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
