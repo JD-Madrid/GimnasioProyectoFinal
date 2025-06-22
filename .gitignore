@@ -62,3 +62,4 @@ desktop.ini
 # Ignora base de datos local (si usás SQLite, por ejemplo)
 *.db
 *.sqlite
+ProyectoFinal_GYM/obj/
