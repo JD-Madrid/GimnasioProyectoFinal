@@ -51,7 +51,7 @@ namespace ProyectoFinal_GYM.Migrations
 
                     b.HasIndex("Planid");
 
-                    b.ToTable("Actividad");
+                    b.ToTable("actividades");
                 });
 
             modelBuilder.Entity("ProyectoFinal_GYM.Models.Cliente", b =>
@@ -76,9 +76,6 @@ namespace ProyectoFinal_GYM.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("idPlan")
-                        .HasColumnType("int");
-
                     b.Property<string>("nombre")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -102,16 +99,11 @@ namespace ProyectoFinal_GYM.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<int>("actividadid")
-                        .HasColumnType("int");
-
                     b.Property<string>("nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
-
-                    b.HasIndex("actividadid");
 
                     b.ToTable("planes");
                 });
@@ -130,17 +122,6 @@ namespace ProyectoFinal_GYM.Migrations
                         .HasForeignKey("planid");
 
                     b.Navigation("plan");
-                });
-
-            modelBuilder.Entity("ProyectoFinal_GYM.Models.Plan", b =>
-                {
-                    b.HasOne("ProyectoFinal_GYM.Models.Actividad", "actividad")
-                        .WithMany()
-                        .HasForeignKey("actividadid")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("actividad");
                 });
 
             modelBuilder.Entity("ProyectoFinal_GYM.Models.Plan", b =>

@@ -11,7 +11,6 @@ namespace ProyectoFinal_GYM.Models
         [StringLength(50)]
         public string nombre { get; set; } = String.Empty;
     
-
         public int duracion { get; set; }
 
         public double precio { get; set; }
