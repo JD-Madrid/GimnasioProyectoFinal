@@ -7,38 +7,38 @@ namespace ProyectoFinal_GYM.Controllers
     {
 
         private GymContext context = new GymContext();
-        public HomeController()
-        {
-            if (!context.planes.Any())
-            {
+        //public HomeController()
+        //{
+        //    if (!context.planes.Any())
+        //    {
 
-                // Crear actividades
-                var natacion = new Actividad { nombre = "Natacion", duracion = 1, precio = 100, capacidad = 10 };
-                var crossfit = new Actividad { nombre = "Crossfit", duracion = 1, precio = 200, capacidad = 40 };
-                var boxeo = new Actividad { nombre = "Boxeo", duracion = 1, precio = 500, capacidad = 2 };
-                var yoga = new Actividad { nombre = "Yoga", duracion = 1, precio = 1000, capacidad = 20 };
-                var calistenia = new Actividad { nombre = "Calistenia", duracion = 1, precio = 1500, capacidad = 20 };
+        //        // Crear actividades
+        //        var natacion = new Actividad { nombre = "Natacion", duracion = 1, precio = 100, capacidad = 10 };
+        //        var crossfit = new Actividad { nombre = "Crossfit", duracion = 1, precio = 200, capacidad = 40 };
+        //        var boxeo = new Actividad { nombre = "Boxeo", duracion = 1, precio = 500, capacidad = 2 };
+        //        var yoga = new Actividad { nombre = "Yoga", duracion = 1, precio = 1000, capacidad = 20 };
+        //        var calistenia = new Actividad { nombre = "Calistenia", duracion = 1, precio = 1500, capacidad = 20 };
 
-                // Guardar actividades primero
-                context.actividades.AddRange(natacion, crossfit, boxeo, yoga, calistenia);
-                context.SaveChanges();
+        //        // Guardar actividades primero
+        //        context.actividades.AddRange(natacion, crossfit, boxeo, yoga, calistenia);
+        //        context.SaveChanges();
 
-                var planBasico = new Plan
-                {
-                    nombre = "Basico",
-                    actividades = new List<Actividad> { natacion, crossfit, boxeo }
-                };
+        //        var planBasico = new Plan
+        //        {
+        //            nombre = "Basico",
+        //            actividades = new List<Actividad> { natacion, crossfit, boxeo }
+        //        };
 
-                var planPremium = new Plan
-                {
-                    nombre = "Premium",
-                    actividades = new List<Actividad>{ natacion,crossfit,boxeo,yoga,calistenia}
-                };
+        //        var planPremium = new Plan
+        //        {
+        //            nombre = "Premium",
+        //            actividades = new List<Actividad>{ natacion,crossfit,boxeo,yoga,calistenia}
+        //        };
 
-                context.planes.AddRange(planBasico, planPremium);
-                context.SaveChanges();
-            }
-        }
+        //        context.planes.AddRange(planBasico, planPremium);
+        //        context.SaveChanges();
+        //    }
+        //}
 
         public IActionResult Index()
         {
@@ -47,6 +47,11 @@ namespace ProyectoFinal_GYM.Controllers
 
 
         public IActionResult registro()
+        {
+            return View();
+        }
+
+        public IActionResult SobreNosotros()
         {
             return View();
         }

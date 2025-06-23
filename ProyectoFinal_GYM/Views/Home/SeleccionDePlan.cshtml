@@ -1,19 +1,50 @@
-﻿<h3 style="text-align:center"> Selecciona un plan</h3>
+﻿<div>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis text-warning">Planes</h1>
+        <p class="fs-5 text-body-secondary">
+            Construí tu mejor versión con nuestros planes pensados para cada objetivo. Ya sea que estés comenzando, busques mejorar tu rendimiento o necesites un entrenamiento más personalizado, tenemos un plan para vos.
+        </p>
+        <p class="fs-5 text-body-secondary">¡Conocé nuestras opciones y empezá hoy a entrenar con nosotros!</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+        <div class="col">
+            <form asp-controller="Home" asp-action="FinalizarRegistro" method="post">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Plan Básico</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Incluye: Natación, Crossfit, Boxeo</li>
+                            <li>Acceso a vestuarios</li>
+                            <li>Soporte por mail</li>
+                            <li>Clases grupales</li>
+                        </ul>
+                        <button type="submit" name="plan" value="Basico" class="w-100 btn btn-lg btn-outline-secondary ">Contratar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-<form asp-controller="Home" asp-action="FinalizarRegistro" method="post">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">plan basico.</p>
-            <button type="submit" name="plan" value="Basico" class="btn btn-success">Plan Básico</button>
+        <div class="col">
+            <form asp-controller="Home" asp-action="FinalizarRegistro" method="post">
+                <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                    <div class="card-header bg-warning py-3 border-warning">
+                        <h4 class="my-0 fw-normal">Plan Premium</h4>
+                    </div>
+                    <div class="card-body bg-dark">
+                        <h1 class="card-title pricing-card-title text-warning">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4 text-light">
+                            <li>Incluye: Todas las actividades</li>
+                            <li>Acceso libre al gimnasio</li>
+                            <li>Soporte telefónico y mail</li>
+                            <li>Clases personalizadas</li>
+                        </ul>
+                        <button type="submit" name="plan" value="Premium" class="w-100 btn btn-lg btn-warning">Contratar</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">plan premium.</p>
-            <button type="submit" name="plan" value="Premium" class="btn btn-warning">Plan Premium</button>
-        </div>
-    </div>
-</form>
+</div>
