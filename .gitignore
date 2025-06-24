@@ -63,3 +63,9 @@ desktop.ini
 *.db
 *.sqlite
 ProyectoFinal_GYM/obj/
+
+/bin/
+/obj/
+*.dll
+*.pdb
+*.cache
