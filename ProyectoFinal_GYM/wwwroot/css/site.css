@@ -20,3 +20,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.accordion-button.hover-warning:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.accordion-button.hover-warning:not(.collapsed) {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
+    border-color: #ffca2c;
+}
+
+.accordion-button:not(.collapsed) {
+    font-weight: bold;
+}

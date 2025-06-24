@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProyectoFinal_GYM.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100 mb-0">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example"> 
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="" /></a>
+                <a class="navbar-brand" href="#"><img src="~/Assets/logo.png" alt="Logo"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation"> 
                     <span class="navbar-toggler-icon"></span> 
                 </button>
@@ -22,27 +22,30 @@
                             <a class="px-2 link-warning text-decoration-none" aria-current="page" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="px-2 link-warning text-decoration-none" aria-current="page" asp-controller="Home" asp-action="SobreNosotros">Sobre Nosotros</a>
+                            <a class="px-2 link-warning text-decoration-none" aria-current="page" asp-controller="Home" asp-action="PreguntasFrecuentes">Preguntas Frecuentes</a>
                         </li>
                      </ul> 
                 </div> 
             </div> 
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <div class="container-fluid bg-black text-white m-0">
-        <footer class="py-3 my-4"> 
+    <main class="flex-grow-1">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </main>
+
+    <div class="container-fluid bg-black text-white border-top border-warning-subtle">
+        <footer class="py-3"> 
             <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
                 <li class="nav-item">
                     <a asp-controller="Home" asp-action="Index" class="px-2 link-warning nav-link">Inicio</a>
                 </li> 
                 <li class="nav-item">
-                    <a asp-controller="Home" asp-action="SobreNosotros" class="px-2 link-warning nav-link">Sobre Nosotros</a>
+                    <a asp-controller="Home" asp-action="PreguntasFrecuentes" class="px-2 link-warning nav-link">Preguntas Frecuentes</a>
                 </li> 
             </ul> 
             <p class="text-center text-body-secondary">© 2025 SPORTCLUB, Inc</p> 

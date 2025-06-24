@@ -51,7 +51,7 @@ namespace ProyectoFinal_GYM.Controllers
             return View();
         }
 
-        public IActionResult SobreNosotros()
+        public IActionResult PreguntasFrecuentes()
         {
             return View();
         }
